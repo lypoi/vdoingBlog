@@ -3,7 +3,7 @@ import { defineConfig4CustomTheme, UserPlugins } from 'vuepress/config'
 import { VdoingThemeConfig } from 'vuepress-theme-vdoing/types'
 import dayjs from 'dayjs'
 
-const DOMAIN_NAME = 'xugaoyi.com' // 域名 (不带https)
+const DOMAIN_NAME = 'lypoi.github.io' // 域名 (不带https)
 const WEB_SITE = `https://${DOMAIN_NAME}` // 网址
 
 export default defineConfig4CustomTheme<VdoingThemeConfig>({
@@ -110,7 +110,7 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
     ],
     sidebarDepth: 2, // 侧边栏显示深度，默认1，最大2（显示到h3标题）
     logo: '/img/logo.png', // 导航栏logo
-    repo: 'xugaoyi/vuepress-theme-vdoing', // 导航栏右侧生成Github链接
+    repo: 'lypoi/', // 导航栏右侧生成Github链接
     searchMaxSuggestions: 10, // 搜索结果显示最大数
     lastUpdated: '上次更新', // 开启更新时间，并配置前缀文字   string | boolean (取值为git提交时间)
     docsDir: 'docs', // 编辑的文件夹
@@ -161,9 +161,9 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
 
     // 博主信息 (显示在首页侧边栏)
     blogger: {
-      avatar: 'https://fastly.jsdelivr.net/gh/xugaoyi/image_store/blog/20200103123203.jpg',
+      avatar: 'https://images.cnblogs.com/cnblogs_com/blogs/447966/galleries/2319514/o_230620003108_o_my.jpg',
       name: '人恒过',
-      slogan: '我常错',
+      slogan: '我常错~',
     },
 
     social: {
@@ -197,8 +197,8 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
     // 扩展自动生成frontmatter。（当md文件的frontmatter不存在相应的字段时将自动添加。不会覆盖已有的数据。）
     extendFrontmatter: {
       author: {
-        name: 'xugaoyi',
-        link: 'https://github.com/xugaoyi'
+        name: 'lypoi',
+        link: 'https://github.com/lypoi'
       }
     },
 
@@ -215,14 +215,6 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
       },
     ],
     ['meta', { name: 'theme-color', content: '#11a8cd' }], // 移动浏览器主题颜色
-    // [
-    //   'script',
-    //   {
-    //     'data-ad-client': 'ca-pub-7828333725993554',
-    //     async: 'async',
-    //     src: 'https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js',
-    //   },
-    // ], // 网站关联Google AdSense 与 html格式广告支持（你可以去掉）
   ],
 
 
@@ -279,9 +271,6 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
       'demo-block', // demo演示模块 https://github.com/xiguaxigua/vuepress-plugin-demo-block
       {
         settings: {
-          // jsLib: ['http://xxx'], // 在线示例(jsfiddle, codepen)中的js依赖
-          // cssLib: ['http://xxx'], // 在线示例中的css依赖
-          // vue: 'https://fastly.jsdelivr.net/npm/vue/dist/vue.min.js', // 在线示例中的vue依赖
           jsfiddle: false, // 是否显示 jsfiddle 链接
           codepen: true, // 是否显示 codepen 链接
           horizontal: false, // 是否展示为横向样式
