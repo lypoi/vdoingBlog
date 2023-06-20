@@ -25,7 +25,7 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
     nav: [
       { text: '首页', link: '/' },
       {
-        text: '前端',
+        text: '前端~',
         link: '/web/', //目录页链接，此处link是vdoing主题新增的配置项，有二级导航时，可以点击一级导航跳到目录页
         items: [
           // 说明：以下所有link的值只是在相应md文件头部定义的永久链接（不是什么特殊编码）。另外，注意结尾是有斜杠的
@@ -96,11 +96,7 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
       {
         text: '收藏',
         link: '/pages/beb6c0bd8a66cea6/',
-        items: [
-          { text: '网站', link: '/pages/beb6c0bd8a66cea6/' },
-          { text: '资源', link: '/pages/eee83a9211a70f9d/' },
-          { text: 'Vue资源', link: '/pages/12df8ace52d493f6/' },
-        ],
+        items: [],
       },
       {
         text: '索引',
@@ -131,10 +127,10 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
 
     pageStyle: 'card', // 页面风格，可选值：'card'卡片 | 'line' 线（未设置bodyBgImg时才生效）， 默认'card'。 说明：card时背景显示灰色衬托出卡片样式，line时背景显示纯色，并且部分模块带线条边框
 
-    bodyBgImg: [
-      'https://raw.githubusercontent.com/lypoi/GitPic/main/img/bg.jpg',
-    ], // body背景大图，默认无。 单张图片 String | 多张图片 Array, 多张图片时隔bodyBgImgInterval切换一张。
-    bodyBgImgOpacity: 0.3, // body背景图透明度，选值 0.1~1.0, 默认0.5
+    // bodyBgImg: [
+    //   'https://raw.githubusercontent.com/lypoi/GitPic/main/img/bg.jpg',
+    // ], // body背景大图，默认无。 单张图片 String | 多张图片 Array, 多张图片时隔bodyBgImgInterval切换一张。
+    // bodyBgImgOpacity: 0.3, // body背景图透明度，选值 0.1~1.0, 默认0.5
     // bodyBgImgInterval: 15, // body多张背景图时的切换间隔, 默认15，单位s
     // titleBadge: false, // 文章标题前的图标是否显示，默认true
     // titleBadgeIcons: [ // 文章标题前图标的地址，默认主题内置图标
@@ -170,7 +166,6 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
       slogan: '我常错',
     },
 
-    // 社交图标 (显示于博主信息栏和页脚栏。内置图标：https://doc.xugaoyi.com/pages/a20ce8/#social)
     social: {
       // iconfontCssFile: '//at.alicdn.com/t/xxx.css', // 可选，阿里图标库在线css文件地址，对于主题没有的图标可自己添加。阿里图片库：https://www.iconfont.cn/
       icons: [
