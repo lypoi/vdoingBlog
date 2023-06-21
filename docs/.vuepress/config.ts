@@ -247,7 +247,7 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
           },
           {
             title: '在Vue API中搜索',
-            frontUrl: 'https://cn.vuejs.org/v2/api/#',
+            frontUrl: 'https://v2.cn.vuejs.org/v2/api/#',
           },
           {
             title: '在Bing中搜索',
