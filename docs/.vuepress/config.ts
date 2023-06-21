@@ -161,7 +161,7 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
 
     // 博主信息 (显示在首页侧边栏)
     blogger: {
-      avatar: 'https://images.cnblogs.com/cnblogs_com/blogs/447966/galleries/2319514/o_230620003108_o_my.jpg',
+      avatar: 'https://raw.githubusercontent.com/lypoi/GitPic/master/img/o_my.jpg',
       name: '人恒过',
       slogan: '我常错~',
     },
