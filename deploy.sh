@@ -5,7 +5,7 @@ set -e
 
 
 push_addr=git@github.com:lypoi/lypoi.github.io.git # git提交地址，也可以手动设置，比如：push_addr=git@github.com:xugaoyi/vuepress-theme-vdoing.git
-commit_info=`git describe --all --always --long`
+commit_info=自动部署
 dist_path=docs/.vuepress/dist # 打包生成的文件夹路径
 push_branch=main # 推送的分支
 
@@ -17,7 +17,7 @@ cd $dist_path
 
 git init
 git add -A
-git commit -m "deploy, $commit_info"
+git commit -m "$commit_info"
 git push -f $push_addr HEAD:$push_branch
 
 cd -
